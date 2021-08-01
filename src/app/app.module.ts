@@ -8,6 +8,7 @@ import { FooterBarComponent } from './footer-bar/footer-bar.component';
 import { SearchBarComponent } from './nav-bar/search-bar/search-bar.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AboutComponent } from './about/about.component';
+import { GetNotifiedComponent } from './home-page/get-notified/get-notified.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AboutComponent } from './about/about.component';
     FooterBarComponent,
     SearchBarComponent,
     HomePageComponent,
-    AboutComponent
+    AboutComponent,
+    GetNotifiedComponent
   ],
   imports: [
     BrowserModule,
