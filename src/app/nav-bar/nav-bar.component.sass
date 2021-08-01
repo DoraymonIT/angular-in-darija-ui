@@ -1,0 +1,29 @@
+@import ../../styles
+.navbar
+  display: grid
+  grid-template-columns: 1fr 1fr 2fr 1fr
+.image
+  text-align: center
+  cursor: pointer
+.ri-3x
+  font-size: 40px
+  color: $white
+.navbar-nav
+  color: $white
+  display: flex
+nav
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+  li
+    display: inline-block
+    padding: 25px
+    a
+      color: $white
+      text-decoration: none
+      &:focus,&:active,&:hover
+        text-decoration: underline
+.github_repo
+  grid-column-start: end
+  padding: 17px

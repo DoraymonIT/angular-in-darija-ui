@@ -1,0 +1,32 @@
+<header>
+  <nav class="navbar">
+    <div class="image" [routerLink]="['/']" >
+      <img
+        src="../../assets/logo.png"
+        Width
+        height="60%"
+        alt="Angular In darija Logo"
+      />
+    </div>
+    <div class="elements">
+      <ul class="navbar-nav">
+        <li>
+          <a href="#">Blog</a>
+          </li>
+        <li>
+          <a href="#">Sessions</a>
+          </li>
+        <li>
+          <a  [routerLink]="['/about']"  >About</a>
+        </li>
+      </ul>
+    </div>
+    <div class="search-bar">
+      <app-search-bar></app-search-bar>
+    </div>
+    <div class="github_repo">
+
+     <i class="ri-github-fill ri-3x"></i>
+    </div>
+  </nav>
+</header>
