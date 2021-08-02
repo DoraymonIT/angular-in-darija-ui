@@ -9,6 +9,7 @@ import { SearchBarComponent } from './nav-bar/search-bar/search-bar.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AboutComponent } from './about/about.component';
 import { GetNotifiedComponent } from './home-page/get-notified/get-notified.component';
+import { ContributersComponent } from './about/contributers/contributers.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { GetNotifiedComponent } from './home-page/get-notified/get-notified.comp
     SearchBarComponent,
     HomePageComponent,
     AboutComponent,
-    GetNotifiedComponent
+    GetNotifiedComponent,
+    ContributersComponent
   ],
   imports: [
     BrowserModule,
