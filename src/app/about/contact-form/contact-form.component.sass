@@ -1,0 +1,56 @@
+@import ../../../styles
+.contact_form
+  margin: auto
+  width: 580px
+  background: $primary
+  box-shadow: 10px 10px 53px 21px rgba(0, 0, 0, 0.2)
+  border-radius: 16px
+.title_form
+  font-weight: bold
+  font-size: 40px
+  color: $white
+  transform: rotate(-3deg)
+  margin: 40px
+  &::after
+    content: ""
+    width: 100%
+    left: 0
+    height: 23px
+    display: block
+    background: $secondary
+    position: absolute
+    bottom: 13%
+    z-index: -1
+.desc_form
+  font-weight: normal
+  font-size: 20px
+  color: $secondary
+.content
+  padding: 10px 97px
+  color: $secondary
+.input_name,.input_email,.input_message
+  width: 65%
+  border: unset
+  background: $secondary
+  border-radius: 15px
+  padding: 15px
+  outline: none
+  color: $white
+  margin-bottom: 10px
+  font-family: 'Jost',sans-serif
+  font-weight: 600
+::placeholder
+  color: #ffffff87
+.button_contact
+  all: unset
+  background: linear-gradient(92.14deg, #FFFFFF -13.34%, #6C63FF 126.91%)
+  border-radius: 200px
+  padding: 15px
+  margin-bottom: 10px
+  cursor: pointer
+  width: 150px
+  font-weight: 500
+  color: $primary
+  &:hover
+    background: linear-gradient(92.14deg, #6C63FF -13.34%, #FFFFFF 126.91%)
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px

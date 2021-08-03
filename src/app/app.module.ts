@@ -10,6 +10,9 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { AboutComponent } from './about/about.component';
 import { GetNotifiedComponent } from './home-page/get-notified/get-notified.component';
 import { ContributersComponent } from './about/contributers/contributers.component';
+import { SessionsComponent } from './sessions/sessions.component';
+import { BlogComponent } from './blog/blog.component';
+import { ContactFormComponent } from './about/contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { ContributersComponent } from './about/contributers/contributers.compone
     HomePageComponent,
     AboutComponent,
     GetNotifiedComponent,
-    ContributersComponent
+    ContributersComponent,
+    SessionsComponent,
+    BlogComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,

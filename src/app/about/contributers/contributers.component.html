@@ -6,4 +6,10 @@
   <br />
   <br />
   <button class="button_contr">I want to contribute ?</button>
+  <div class="individuals">
+    <div class="indiv1" *ngFor="let item of contributers">
+      <div class="round"></div>
+      {{ item.nomComplet }}
+    </div>
+  </div>
 </div>
