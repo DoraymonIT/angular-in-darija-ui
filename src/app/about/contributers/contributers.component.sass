@@ -1,8 +1,7 @@
 @import ../../../styles
 .contributers
   margin: auto
-  width: 700px
-  text-align: center
+  width: 70%
 .title_contr
   font-weight: 500
   font-size: 24px
@@ -25,13 +24,25 @@
   box-shadow: 10px 10px 53px 21px rgba(0, 0, 0, 0.2)
   border-radius: 16px
   padding: 18px
-  margin: 10px
+  // margin: 10px
   color: $secondary
 .individuals
   display: grid
   grid-template-columns: 1fr 1fr 1fr 1fr
+  grid-gap: 10px 30px
+  margin-top: 25px
 .round
-  background-color: gray
+  border: 2px solid gray
   padding: 43px
   margin: 10px
   border-radius: 50%
+  // laptop_and_more
+@media only screen and (max-width: $laptop_and_more)
+  .individuals
+    grid-template-columns: 1fr 1fr 1fr
+@media only screen and (max-width: $tablet_size)
+  .individuals
+    grid-template-columns: 1fr 1fr
+@media (max-width: $mobile_size)
+  .individuals
+    grid-template-columns: 1fr
