@@ -3,8 +3,7 @@
     <div class="image" [routerLink]="['/']">
       <img
         src="../../assets/logo.png"
-class="logo"
-
+        class="logo"
         alt="Angular In darija Logo"
       />
     </div>
@@ -25,9 +24,25 @@ class="logo"
       <app-search-bar></app-search-bar>
     </div>
     <div class="github_repo">
-      <img src="../../assets/github_logo.svg" alt="">
+      <img src="../../assets/github_logo.svg" alt="" />
       <!-- <i class="fas fa-github fa-3x"></i> -->
       <!-- <i class="ri-github-fill ri-3x"></i> -->
+    </div>
+  </nav>
+  <nav class="navbar-mobile">
+    <div  [routerLink]="['/']">
+      <img
+        src="../../assets/logo.png"
+        class="logo_mob"
+        alt="Angular In darija Logo"
+        width="70%"
+      />
+    </div>
+    <div id="nav-icon3"  class="{{className}}" (click)="onClickChange()">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
   </nav>
 </header>
