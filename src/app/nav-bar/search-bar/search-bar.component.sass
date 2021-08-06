@@ -2,7 +2,9 @@
 .search
   margin: 17px
 .search_input
-  background: #F3F3F3
+  background: url(#{$notifed_image}/search_icon.svg) right no-repeat, #F3F3F3
+  background-size: 20px
+  background-origin: content-box
   border: 2px solid #525252
   box-sizing: border-box
   border-radius: 6px
@@ -11,6 +13,8 @@
   color: $primary
   font-weight: 500
   font-family: 'Jost',sans-serif
-  &:focus,&:active,&:hover
+  &:hover
     border-color: $secondary
+  &:focus,&:active
+    background: #F3F3F3
     outline: none
