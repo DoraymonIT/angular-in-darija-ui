@@ -1,0 +1,50 @@
+@import ../../styles
+.sessions
+  display: grid
+  grid-template-columns: 25% 75%
+  margin-top: -35px
+.title_sess
+  color: $white
+  text-align: center
+  border-bottom: 2px solid #f1f1f1
+.side_bar_content
+  background-color: #03041F
+  padding: 14px
+  overflow-y: scroll
+  height: 100vh
+.session_item
+  display: grid
+  grid-template-columns: 30% 70%
+  background: $primary
+  border: 3px solid $angular_red
+  border-radius: 15px
+  padding: 8px
+  margin-bottom: 10px
+.session_details
+  color: $white
+.play_icon
+  padding: 17px
+.la-play:before
+  content: "\f04b"
+  color: $white
+  border: 2px solid
+  padding: 4px
+  font-size: 21px
+  font-weight: bold
+  border-radius: 50%
+
+  /* width */
+::-webkit-scrollbar
+  width: 10px
+/* Track */
+::-webkit-scrollbar-track
+  background: #f1f1f1
+  border-radius: 50pxs
+/* Handle */
+::-webkit-scrollbar-thumb
+  background: $angular_red
+  border-radius: 50px
+  border: 2px solid #f1f1f1
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+  background: $button_primary
