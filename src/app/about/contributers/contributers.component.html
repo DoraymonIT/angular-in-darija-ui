@@ -14,9 +14,12 @@
     >
   </button>
   <div class="individuals">
-    <div class="indiv1" *ngFor="let item of contributers">
-      <div class="round"></div>
-      {{ item.nomComplet }}
+    <div class="indiv1" *ngFor="let item of contributors">
+      <!-- <div class="round"> -->
+        <img class="round_img" src="{{item?.avatar_url}}" alt="{{ item?.login }}" width="80px" height="80px">
+        <br>
+      <!-- </div> -->
+      {{ item?.login }}
     </div>
   </div>
 </div>

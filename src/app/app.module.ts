@@ -13,6 +13,8 @@ import { ContributersComponent } from './about/contributers/contributers.compone
 import { SessionsComponent } from './sessions/sessions.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactFormComponent } from './about/contact-form/contact-form.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SessionDetailsComponent } from './sessions/session-details/session-details.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +28,13 @@ import { ContactFormComponent } from './about/contact-form/contact-form.componen
     ContributersComponent,
     SessionsComponent,
     BlogComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    SessionDetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
