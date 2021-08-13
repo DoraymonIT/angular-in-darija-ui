@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-session-details',
@@ -6,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./session-details.component.sass'],
 })
 export class SessionDetailsComponent implements OnInit {
-  constructor() {}
+  id;
+  constructor(   private route: ActivatedRoute) {}
   ngOnInit(): void {
+     this.route.params.subscribe((params) => {
+       this.id = +params['id'];
+    });
   }
 
 }

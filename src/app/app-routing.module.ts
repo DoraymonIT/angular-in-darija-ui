@@ -18,7 +18,7 @@ const routes: Routes = [
   {
     path: 'sessions',
     component: SessionsComponent,
-    // children: [{ path: ':id', component: SessionDetailsComponent }],
+    children: [{ path: ':id', component: SessionDetailsComponent }],
   },
   {
     path: 'blog',
